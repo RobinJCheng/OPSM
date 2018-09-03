@@ -51,7 +51,8 @@ Here is the detailed meaning of the parameters:
 
 
 
-## Using the source code
-*The main() function is in ydTest.cpp. The current main() function is to collect argv parameters as input then run corresponds methods.
-*The main1() function in ydTest.cpp is the most directly way of calling our methods provided for users' reference. The main1() function servers as example for users trying to call our methods.
+## Using the source code and Examples
+The main() function is in ydTest.cpp. The current main() function is to collect argv parameters as input then run corresponds methods.
+
+The main1() function in ydTest.cpp is the most directly way of calling our methods provided for users' reference. The main1() function servers as example for users trying to call our methods.
 
