@@ -5,12 +5,15 @@ To run the program, go to the folder that contains the opsm.exe on windows comma
 
 
 To compile the source code on Linux using g++, go to "Linux Version" sub-folder from terminal and use the following command to compile:
-"g++ convTest.cpp Fourier.cpp  ydTest.cpp -o opsm"
+"g++ -O2 convTest.cpp Fourier.cpp  ydTest.cpp -o opsm"
 we provided the preprocessed GAL and GDS data set in "testData" folder, to run the program, e.g.
 "./opsm /testData/GAL_range.txt Apri_PF 200 4 0.6"
 
-opsm input_file method_name min_row min_col threshold_probabilty(optional for PF and PFA methods only)
-The parameters are as follows:
+Here is the detailed meaning of the parameters:
+
+./opsm input_file method_name min_row min_col threshold_probabilty (optional for PF and PFA methods only)
+
+The meaning of the parameters are as follows:
 input_file: the location of the input file
 method_name:  which method do you want to run {"Apri_ES", "Apri_PF", "Apri_PFA", "DFS_ES", "DFS_PF", "DFS_PFA"} 
 			  "Apri" means Apriori based mining, "DFS" means depth first search based mining, "ES" denotes Expected Support, "PF" denotes Probabilistic Frequentness, and "PFA" denotes Probabilistic Frequentness Approximation.
